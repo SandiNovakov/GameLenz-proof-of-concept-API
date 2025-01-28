@@ -6,8 +6,9 @@ Testni API za Aplikaciju GameLenz.
 Nabaviti API ključ za Steam Web API: https://steamcommunity.com/dev
 
 ## Postavljanje radnog okruženja
-Prvi korak je instalirati Visual Studio Code. Nakon toga slijedi instalacija Node.js-a. Nakon toga stvaramo direktorij u kojem će se čuvati projekt. U ovom slučaju se putem GitHub Desktopa repozitorij klonira na određenu lokaciju. Unutar Visual Studio Code-a u terminalu se pomoću NPM-a instaliraju potrebni moduli za rad s API-jem.
-
+Instalirati Visual Studio Code.
+Instalirati node.js
+Pomoću npm-a instalirati potrebne module:
 ![image](https://github.com/user-attachments/assets/bb59c848-9415-4948-a84b-15fae1fdbdcb)
 
 ## Postavljanje API ključa
