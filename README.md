@@ -11,6 +11,7 @@ Instalirati Visual Studio Code.
 Instalirati node.js
 
 Pomoću npm-a instalirati potrebne module:
+
 ![image](https://github.com/user-attachments/assets/bb59c848-9415-4948-a84b-15fae1fdbdcb)
 
 ## Postavljanje API ključa
