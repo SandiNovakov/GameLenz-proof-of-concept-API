@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App List</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div>
+        <div class="igre-container" id="igre-container"></div>
+
+        <script>
+            const container = document.getElementById("igre-container");
+
+            fetch(`./povuci-igre`)
+                .then(response => response.json())
+
+                .then(data => {
+                    const apps = data.games;
+                    apps.forEach(app => {
+                        console.log(app);
+                        const appDiv = document.createElement("div");
+                        appDiv.classList.add("game-item");
+
+                        appDiv.innerHTML = `
+                            <h2>${app.name}</h2>
+                            <p>appid: ${app.appid}</p>
+                            <a href="/dodaj-igru?name=${encodeURIComponent(app.name)}&appid=${app.appid}" class="button">Dodaj Igru</a>
+                        `;
+
+                        container.appendChild(appDiv);
+                    });
+                });
+        </script>
+    </div>
+</body>
+
+</html>
